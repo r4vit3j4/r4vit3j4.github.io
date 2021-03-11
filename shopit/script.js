@@ -22,7 +22,7 @@ function login()
     }
     else
     {
-        location.href = "./index.html"
+        location.href = "./index.html";
     }
 }
 function signup()
@@ -41,10 +41,10 @@ function account()
 }
 function logout()
 {
-    localStorage.setItem("fname","");
-    localStorage.setItem("sname","");
-    localStorage.setItem("email","");
-    localStorage.setItem("pass","");
+    localStorage.clear("fname");
+    localStorage.clear("sname");
+    localStorage.clear("pass");
+    localStorage.clear("email");
     location.href="./index.html"
 }
 function buy(name)
