@@ -1,7 +1,7 @@
 num = 0;
 function startup()
 {
-    if(localStorage.getItem("fname")!="")
+    if(localStorage.getItem("fname")!=null)
     {
         document.getElementById("account").innerHTML = localStorage.getItem("fname");
         document.getElementById("account").href="./account.html"
@@ -49,7 +49,7 @@ function logout()
 }
 function buy(name)
 { 
-    if(localStorage.getItem("fname")=="")
+    if(localStorage.getItem("fname")==null)
     {
         document.getElementById("berror"+name).innerHTML = "Please Login before buying";
     }   
@@ -228,9 +228,5 @@ function loadcart()
     if(localStorage.getItem("pname0")!=null)
     {
         document.getElementById("cart").innerHTML="<h3 style=\"font-size:20px;color:white\">Apology : The cart function could have worked, but while writing the code i faced a bug and due to time constraints fixing this could not have been possible for me in the current moment, but the source code(which still contains the bug) for the cart function is still left over as it is. I'm sure this can be fixed in the next iteration and I think you can understand this.</h3><h2>thanking you</h2>";
-    }
-    else
-    {
-        alert(1);
     }
 }
