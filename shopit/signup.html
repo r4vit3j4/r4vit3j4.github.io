@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SHOP&#9889;T &nbsp;Signup</title>
+        <title>SHOPIT &nbsp;Signup</title>
         <link rel="stylesheet" href="./style.css">
         <link rel="shortcut icon" type="image/png" href="n-logo.png">
+        <script src="./script.js"></script>
     </head>
-    <body class="bg">
+    <body class="bg" onload="startup()">
         <nav>
             <div class="logo">
                 <h2><a href="./index.html">SHOP&#9889;T</a></h2>
             </div>
             <ul class="navl">
                 <li>
-                    <a href="./login.html">Login/Signup</a>
+                    <a id="account" href="./login.html">Login/Signup</a>
                 </li>
                 <li>
                     <a href="./cart.html">&#128722;Cart</a>
@@ -33,7 +34,7 @@
                         </tr>
                         <tr>
                             <td>Enter Your Second Name</td>
-                            <td><input type="text" id="fname" required placeholder="Second name"></td>
+                            <td><input type="text" id="sname" required placeholder="Second name"></td>
                         </tr>
                         <tr>
                             <td>Enter Your Email</td>
@@ -44,7 +45,7 @@
                             <td><input type="password" id="pass" required placeholder="Password"></td>
                         </tr>
                         <tr>
-                            <td colspan="2" align="center"><input class="lsbut" type="button" value="Signup"></td>
+                            <td colspan="2" align="center"><input class="lsbut" type="button" value="Signup" onclick="signup()"></td>
                         </tr>
                     </table>
                 </center>

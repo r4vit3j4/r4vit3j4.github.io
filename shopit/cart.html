@@ -4,15 +4,16 @@
         <title>SHOPIT Cart</title>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="./n-logo.png">
+        <script src="script.js"></script>
     </head>
-    <body class="bg">
+    <body class="bg" onload="startup();loadcart()">
         <nav>
             <div class="logo">
                 <h2><a href="./index.html">SHOP&#9889;T</a></h2>
             </div>
             <ul class="navl">
                 <li>
-                    <a href="./login.html">Login/Signup</a>
+                    <a id="account" href="./login.html">Login/Signup</a>
                 </li>
                 <li>
                     <a href="./cart.html">&#128722;Cart</a>
@@ -23,7 +24,7 @@
             </ul>
         </nav>
         <h1 align="center">Cart</h1>
-        <div class="div2">
+        <div id="cart" class="div2">
             Your Cart is empty!
         </div>
     </body>

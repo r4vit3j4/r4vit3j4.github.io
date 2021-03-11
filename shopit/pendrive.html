@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SHOPIT Cart</title>
+        <title>SHOPIT Pendrives</title>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="./n-logo.png">
+        <script src="script.js"></script>
     </head>
-    <body class="bg">
+    <body class="bg" onload="startup()">
         <nav>
             <div class="logo">
                 <h2><a href="./index.html">SHOP&#9889;T</a></h2>
             </div>
             <ul class="navl">
                 <li>
-                    <a href="./login.html">Login/Signup</a>
+                    <a id="account" href="./login.html">Login/Signup</a>
                 </li>
                 <li>
                     <a href="./cart.html">&#128722;Cart</a>
@@ -36,7 +37,10 @@
                                 <li>Compatible with Micro USB Type 'B' Android based Smartphones & Tablets</li>
                                 <li>Retractable design with dual micro-USB and USB 3.0 connectors</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;690</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(20)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror20"></span>
+                            <span class="bsucs" id="bsucs20"></span>
                         </td>
                     </tr>
                     <tr>
@@ -48,7 +52,10 @@
                                 <li>High-speed USB 3.0 performance of up to 150MB/s read speeds</li>
                                 <li>Compatible with both USB 2.0 and 3.0 ports</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;2,699</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(21)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror21"></span>
+                            <span class="bsucs" id="bsucs21"></span>
                         </td>
                     </tr>
                     <tr>
@@ -60,7 +67,10 @@
                                 <li>14 MB/s Read Speed and 4 MB/s Write Speed</li>
                                 <li>Temperature Proof, Shock-Proof, and vibration-proof</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;349</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(22)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror22"></span>
+                            <span class="bsucs" id="bsucs22"></span>
                         </td>
                     </tr>
                 </table

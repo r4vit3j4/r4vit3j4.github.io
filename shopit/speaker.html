@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SHOPIT Cart</title>
+        <title>SHOPIT Speakers</title>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="./n-logo.png">
+        <script src="script.js"></script>
     </head>
-    <body class="bg">
+    <body class="bg" onload="startup()">
         <nav>
             <div class="logo">
                 <h2><a href="./index.html">SHOP&#9889;T</a></h2>
             </div>
             <ul class="navl">
                 <li>
-                    <a href="./login.html">Login/Signup</a>
+                    <a id="account" href="./login.html">Login/Signup</a>
                 </li>
                 <li>
                     <a href="./cart.html">&#128722;Cart</a>
@@ -36,7 +37,10 @@
                                 <li>12 hours of playtime under optimum audio settings</li>
                                 <li>IPX7 Waterproof with durable fabric material</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;6,999</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(17)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror17"></span>
+                            <span class="bsucs" id="bsucs17"></span>
                         </td>
                     </tr>
                     <tr>
@@ -49,7 +53,10 @@
                                 <li>Wireless Bluetooth pairing with up to 6 hours of play time from a rechargeable battery, wireless range up to 30 feet (9 m)</li>
                                 <li>Waterproof speaker from the Inside out (Ipx7 rating), with soft, rugged exterior that resists dents, cracks and scratches</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;8,990</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(18)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror18"></span>
+                            <span class="bsucs" id="bsucs18"></span>
                         </td>
                     </tr>
                     <tr>
@@ -62,7 +69,10 @@
                                 <li>Emberton offers 20+ hours of portable playtime on a single charge.</li>
                                 <li>Tough and resilient, boasting an extremely durable and easy to use design that features an IPX7 water-resistance rating</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;14,999</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(19)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror19"></span>
+                            <span class="bsucs" id="bsucs19"></span>
                         </td>
                     </tr>
                 </table

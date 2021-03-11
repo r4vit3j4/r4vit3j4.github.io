@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SHOPIT Cart</title>
+        <title>SHOPIT TVs</title>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="./n-logo.png">
+        <script src="script.js"></script>
     </head>
-    <body class="bg">
+    <body class="bg" onload="startup()">
         <nav>
             <div class="logo">
                 <h2><a href="./index.html">SHOP&#9889;T</a></h2>
             </div>
             <ul class="navl">
                 <li>
-                    <a href="./login.html">Login/Signup</a>
+                    <a id="account" href="./login.html">Login/Signup</a>
                 </li>
                 <li>
                     <a href="./cart.html">&#128722;Cart</a>
@@ -36,7 +37,10 @@
                                 <li>Display: LED Panel | Noise Reduction | Colour Space Mapping |Dynamic Contrast | Anti-Aliasing | DCI-P3 93% colour gamut | Gamma Engine</li>
                                 <li>Smart TV Features: Android TV 9.0</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;25,999</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(9)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror9"></span>
+                            <span class="bsucs" id="bsucs9"></span>
                         </td>
                     </tr>
                     <tr>
@@ -49,7 +53,10 @@
                                 <li>Sound : 20 Watts Output | Dolby Digital Plus | Adaptive Sound | Display : Ultra HD (4k) LED Panel | 3 Side Bezel-less Design | HDR 10+ | UHD Dimming | Purcolor | Contrast Enhancer</li>
                                 <li>Warranty Information: 1 year comprehensive and 1 year additional warranty on Panel by Samsung</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;49,999</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(10)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror10"></span>
+                            <span class="bsucs" id="bsucs10"></span>
                         </td>
                     </tr>
                     <tr>
@@ -62,7 +69,10 @@
                                 <li>Sound: 20 Watts Output | Dolby Audio + DTS-HD. Audio Power ：10W x 2 | Display : LED Panel | Vivid picture engine | 4K HDR 10</li>
                                 <li>Smart TV features : Built-In Wi-Fi | PatchWall | Netflix | Prime Video | Disney+Hotstar and more | Android TV 9.0 | Google Assistant | Data Saver</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;39,999</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(11)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror11"></span>
+                            <span class="bsucs" id="bsucs11"></span>
                         </td>
                     </tr>
                     <tr>
@@ -75,7 +85,10 @@
                                 <li>Sound output: 10 Watts Output I 2 Speakers | DTS Virtual:X | Sound Type : Down Firing | Display: Active HDR | Display Type: Flat | BackLight Module: Slim LED</li>
                                 <li>Smart TV Features: Web OS Smart TV | Wi-Fi | Home Dashboard | Screen Mirroring | Mini TV Browser | Multi-Tasking</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;16,999</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(12)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror12"></span>
+                            <span class="bsucs" id="bsucs12"></span>
                         </td>
                     </tr>
                 </table

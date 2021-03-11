@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SHOPIT Cart</title>
+        <title>SHOPIT Laptops</title>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="./n-logo.png">
+        <script src="script.js"></script>
     </head>
-    <body class="bg">
+    <body class="bg" onload="startup()">
         <nav>
             <div class="logo">
                 <h2><a href="./index.html">SHOP&#9889;T</a></h2>
             </div>
             <ul class="navl">
                 <li>
-                    <a href="./login.html">Login/Signup</a>
+                    <a id="account" href="./login.html">Login/Signup</a>
                 </li>
                 <li>
                     <a href="./cart.html">&#128722;Cart</a>
@@ -36,7 +37,10 @@
                                 <li>It comes equipped with 6 GB of NVIDIA Geforce RTX 2060 so that you can enjoy an enhanced and seamless gaming experience</li>
                                 <li>This Acer laptop boasts a refresh rate of 144 Hz and an overdrive response of 3 ms so that the visual experience of your game is lag-free, fluid, and seamless.s</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;1,17,690</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(13)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror13"></span>
+                            <span class="bsucs" id="bsucs13"></span>
                         </td>
                     </tr>
                     <tr>
@@ -49,7 +53,10 @@
                                 <li>Memory & Storage: 16GB (2x 8GB) DDR4 2933MHz Dual Channel RAM, Upgradeable up to 32GB using 2x SO-DIMM Slot with | Storage: 512GB M.2 NVMe PCIe 3.0 SSD with 2x empty M.2 Slot for SSD Storage Expansion</li>
                                 <li>Graphics: Dedicatd NVIDIA GeForce GTX 1660Ti GDDR6 6GB VRAM | Display: 17.3-inch (16:9) Full HD (1920x1080), 120Hz Refresh Rate, Anti-Glare, vIPS-level panel with 45% NTSC, Up to 81.5% screen to body ratio</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;1,02,990</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(14)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror14"></span>
+                            <span class="bsucs" id="bsucs14"></span>
                         </td>
                     </tr>
                     <tr>
@@ -62,7 +69,10 @@
                                 <li>Memory & Storage:8GB DDR4,Dual Channel 2933MHz | 512 GB M.2 PCIe NVMe Solid State Drive | Graphics:NVIDIA GeForce GTX 1650 4GB GDDR6 | Game Shift Technology</li>
                                 <li>I/O Ports:1xUSB 3.2 Gen 1 | 2x USB 2.0 ports | 1x HDMI 2.0 port | 1x SD-card slot | 1x RJ45 port | 1x headset port</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;72,990</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(15)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror15"></span>
+                            <span class="bsucs" id="bsucs15"></span>
                         </td>
                     </tr>
                     <tr>
@@ -76,7 +86,10 @@
                                 <li>Memory and Storage: 8GB RAM DDR4-3200, Upgradable up to 16GB | 1TB HDD + 256GB SSD | Display: 15.6" Full HD (1920x1080) | Wide Viewing Angle | Anti-Glare | IPS Technology | 120 Hz Refresh Rate</li>
                                 <li>Graphics: NVIDIA GeForce GTX 1650 4GB GDDR6 Dedicated Graphics</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;67,990</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(16)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror16"></span>
+                            <span class="bsucs" id="bsucs16"></span>
                         </td>
                     </tr>
                 </table

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SHOPIT Cart</title>
+        <title>SHOPIT Activity Tracker</title>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="./n-logo.png">
+        <script src="script.js"></script>
     </head>
-    <body class="bg">
+    <body class="bg" onload="startup()">
         <nav>
             <div class="logo">
                 <h2><a href="./index.html">SHOP&#9889;T</a></h2>
             </div>
             <ul class="navl">
                 <li>
-                    <a href="./login.html">Login/Signup</a>
+                    <a id="account" href="./login.html">Login/Signup</a>
                 </li>
                 <li>
                     <a href="./cart.html">&#128722;Cart</a>
@@ -36,7 +37,10 @@
                                 <li>Smart Features: App notifications, control music, manage your calls, check Weather, alarm, idle alert, locate your phone etc.</li>
                                 <li>PAI (Personal Activity Intelligence) – Single matrix to track your all fitness related activities | Battery runs up to 14 days on a single charge</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;2,499</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(26)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror26"></span>
+                            <span class="bsucs" id="bsucs26"></span>
                         </td>
                     </tr>
                     <tr>
@@ -48,7 +52,10 @@
                                 <li>Based on your heart rate, time asleep, restlessness and breathing, sleep score helps you better understand your sleep quality each night. Also track your time in light, deep, and rem sleep stages</li>
                                 <li>Use 24/7 heart rate tracking to better track calorie burn, optimize effort during workouts, see your resting heart rate trends and cardio fitness level in the fitbit app</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;13,666</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(27)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror27"></span>
+                            <span class="bsucs" id="bsucs27"></span>
                         </td>
                     </tr>
                     <tr>
@@ -60,7 +67,10 @@
                                 <li>Sleep Monitor, Messages, GPS, Heart Rate Monitor and measures workouts like running, walking, cycling, yoga, swimming, and dance</li>
                                 <li>Track your daily activity on Apple Watch and see your trends in the Fitness app on iPhone</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;29,900</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(28)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror28"></span>
+                            <span class="bsucs" id="bsucs28"></span>
                         </td>
                     </tr>
                 </table

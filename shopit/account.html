@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SHOPIT &nbsp;Login</title>
+        <title>SHOPIT Account</title>
         <link rel="stylesheet" href="./style.css">
         <link rel="shortcut icon" type="image/png" href="n-logo.png">
         <script src="./script.js"></script>
     </head>
-    <body class="bg" onload="startup()">
+    <body class="bg" onload="account();startup()">
         <nav>
             <div class="logo">
                 <h2><a href="./index.html">SHOP&#9889;T</a></h2>
@@ -23,32 +23,34 @@
                 </li>
             </ul>
         </nav>
-        <h1 class="title">Login</h1>
+        <h1 class="title">Your Account</h1>
         <form method="GET" action="">
             <div class="div1">
                 <center>
                     <table cellspacing="10">
                         <tr>
-                            <td>Enter Your Email</td>
-                            <td><input type="text" id="email" required placeholder="email"></td>
+                            <td>First Name</td>
+                            <td align="center" style="background-color: white;" id="dfname"></td>
                         </tr>
                         <tr>
-                            <td>Enter your Password</td>
-                            <td><input type="password" id="pass" required placeholder="password"></td>
+                            <td>Second Name</td>
+                            <td align="center" style="background-color: white;" id="dsname"></td>
                         </tr>
                         <tr>
-                            <td colspan="2" align="center"><input class="lsbut" type="button" value="Login" onclick="login()"></td>
+                            <td>Email</td>
+                            <td align="center" style="background-color: white;" id="demail"></td>
                         </tr>
                         <tr>
-                            <td colspan="2" align="center"><a id="sup" href="./signup.html">Dont have an account?</a></td>
+                            <td>Password</td>
+                            <td align="center" style="background-color: white;" id="dpass">********</td>
                         </tr>
                         <tr>
-                            <td colspan="2" align="center" style="color:red;text-shadow:1px 1px black" id="error"></td>
+                            <td colspan="2" align="center"><input type="button" value="Delete Account" onclick="logout()"></td>
                         </tr>
                     </table>
                 </center>
             </div>
         </form>
-        <!--<p class="note"><u>Note:</u> Since the website is not linked to any backend, user's login data is stored in local storage</p>-->
+        <p class="note"><u>Note:</u> Since the website is not linked to any backend, user's login data is stored in local storage</p>
     </body>
 </html>

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SHOPIT Cart</title>
+        <title>SHOPIT Mobiles</title>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="./n-logo.png">
+        <script src="script.js"></script>
     </head>
-    <body class="bg">
+    <body class="bg" onload="startup()">
         <nav>
             <div class="logo">
                 <h2><a href="./index.html">SHOP&#9889;T</a></h2>
             </div>
             <ul class="navl">
                 <li>
-                    <a href="./login.html">Login/Signup</a>
+                    <a  id="account" href="./login.html">Login/Signup</a>
                 </li>
                 <li>
                     <a href="./cart.html">&#128722;Cart</a>
@@ -37,7 +38,10 @@
                                 <li>48MP+8MP+5MP+2MP quad rear camera with 1080P Video at 30/60 fps, 4k 30fps | 32MP+8MP front dual camera with 4K video capture at 30/60 fps and 1080 video capture at 30/60 fps</li>
                                 <li>Memory, Storage & SIM: 12GB RAM | 256GB internal memory | OnePlus Nord currently support dual 4G SIM Cards or a Single 5G SIM. 5G+4G support will be available via OTA update at a future date.</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;29,999</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(1)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror1"></span>
+                            <span class="bsucs" id="bsucs1"></span>
                         </td>
                     </tr>
                     <tr>
@@ -46,12 +50,15 @@
                             <h2><a>Mi 10 (Coral Green, 8GB RAM, 256GB Storage) - 108MP Quad Camera, SD 865 Processor</a></h2>
                             Quick Specs:
                             <ul>
-                                <li>OxygenOS based on Android 10 operating system with 2.4GHz Kryo 475 Prime + 2.2GHz Kryo 475 Gold + 6x1.8GHz Kryo 475 Silver Qualcomm Snapdragon 765G 5G mobile platform octa core processor, Adreno 620 GPU</li>
-                                <li>6.44-inch 90Hz fluid Amoled display with 2400 x 1080 pixels resolution | 408ppi</li>
-                                <li>48MP+8MP+5MP+2MP quad rear camera with 1080P Video at 30/60 fps, 4k 30fps | 32MP+8MP front dual camera with 4K video capture at 30/60 fps and 1080 video capture at 30/60 fps</li>
-                                <li>Memory, Storage & SIM: 12GB RAM | 256GB internal memory | OnePlus Nord currently support dual 4G SIM Cards or a Single 5G SIM. 5G+4G support will be available via OTA update at a future date.</li>
+                                <li>Android v10 operating system with 2.84GHz Qualcomm Snapdragon 865 with 7nm octa core processor</li>
+                                <li>16.94 centimeters (6.67-inch) FHD+ AMOLED capacitive multi-touch touchscreen with 2340 x 1080 pixels resolution, 386 ppi pixel density and 19.5:9 aspect ratio | 3D Curved glass</li>
+                                <li>108MP quad rear camera with OIS, ultra-wide, macro, portrait, night mode, AI scene recognition, HDR, pro mode | 20MP front camera</li>
+                                <li>Memory, Storage & SIM: 8GB RAM | 256GB internal memory | Dual SIM (nano+nano) with support for 5G</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;54,999</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(2)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror2"></span>
+                            <span class="bsucs" id="bsucs2"></span>
                         </td>
                     </tr>
                     <tr>
@@ -65,7 +72,10 @@
                                 <li>Quad rear camera setup- Main Camera 108MP + Ultra Wide 12MP Dual Pixel Camera + Tele1 3X 10MP Dual Pixel Camera + Tele2 10x 10MP Dual pixel camera | 40MP front faciing camera</li>
                                 <li>12GB RAM | 256GB internal Storage | Dual SIM (nano+nano) dual-standby (5G+5G)</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;85,999</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(3)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror3"></span>
+                            <span class="bsucs" id="bsucs3"></span>
                         </td>
                     </tr>
                     <tr>
@@ -79,7 +89,10 @@
                                 <li>Pro camera system with 12MP Ultra Wide, Wide and Telephoto cameras; 5x optical zoom range; Night mode, Deep Fusion, Smart HDR 3, Apple ProRAW, 4K Dolby Vision HDR recording</li>
                                 <li>6GB RAM | upto 512GB internal Storage</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;1,24,704</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(4)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror4"></span>
+                            <span class="bsucs" id="bsucs4"></span>
                         </td>
                     </tr>
                 </table

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SHOPIT Cart</title>
+        <title>SHOPIT PC Accessories</title>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="./n-logo.png">
+        <script src="script.js"></script>
     </head>
-    <body class="bg">
+    <body class="bg" onload="startup()">
         <nav>
             <div class="logo">
                 <h2><a href="./index.html">SHOP&#9889;T</a></h2>
             </div>
             <ul class="navl">
                 <li>
-                    <a href="./login.html">Login/Signup</a>
+                    <a  id="account" href="./login.html">Login/Signup</a>
                 </li>
                 <li>
                     <a href="./cart.html">&#128722;Cart</a>
@@ -36,7 +37,10 @@
                                 <li>Textured and contoured keycaps provide maximum grip and enhanced feel. No matter how fast your in-game actions are, every key press registers correctl</li>
                                 <li>Enhance your gaming experience with 18 preset configurations on mechanical keyboard and find a unique one to match your own system.</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;1,799</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(23)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror23"></span>
+                            <span class="bsucs" id="bsucs23"></span>
                         </td>
                     </tr>
                     <tr>
@@ -48,7 +52,10 @@
                                 <li>Play in colour with our most vibrant LIGHTSYNC RGB featuring colour wave effects that are customisable across 16.8 million colours. 8,000 DPI sensor.</li>
                                 <li>The simple 6-button layout and classic gaming shape form a comfortable, time-tested and loved design</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;1,649</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px" onclick="buy(24)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror24"></span>
+                            <span class="bsucs" id="bsucs24"></span>
                         </td>
                     </tr>
                     <tr>
@@ -60,7 +67,10 @@
                                 <li>Full HD widescreen video calling: Logitech C270 let you make widescreen video calls in HD 720p at 30fps. The lense with 60-degree field of view covers all of the action</li>
                                 <li>Built-in noise-reducing mic: Enjoy clear conversation even in busy surroundings and streaming over wifi with noise reducing mic</li>
                             </ul>
-                            <input type="button" value="BUY NOW" style="padding:5px">
+                            <span class="price">&#8377;2,049</span>&nbsp;
+                            <input type="button" value="BUY NOW" style="padding:5px"onclick="buy(25)">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="berror" id="berror25"></span>
+                            <span class="bsucs" id="bsucs25"></span>
                         </td>
                     </tr>
                 </table

@@ -95,3 +95,17 @@ nav
     color:black;
     font-size:14px;
 }
+.price
+{
+    background-color: lightgreen;
+}
+.bsucs
+{
+    color:lightgreen;
+    text-shadow:1px 1px 1px black;
+}
+.berror
+{
+    color:red;
+    text-shadow:1px 1px 1px black;
+}
