@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+body
+{
+    font-family: "JetBrains Mono";
+    color: white;
+    font-size: 1rem;
+    background-color: #8c8c8c;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar
+{
+    display: none;
+}
+.mdiv
+{
+    background-color: #202124;
+    border-radius: 10px;
+}
+.idiv
+{
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
+.red
+{
+    color: red;
+}
+.blue
+{
+    color: #1654ff;
+}
+#logo
+{
+    display: inline-block;
+    width: 140px;
+    margin-left: 1%;
+    border-radius: 10px;
+}
+#ndiv
+{
+    display: inline-block;
+    position:relative;
+    justify-content: space-around;
+    left: 2%; 
+    height: auto;
+}
+.hdiv
+{
+    display: block;
+    background-color: #F10909;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+.hdiv p
+{
+    font-size: 1em;
+    padding: 0.3rem;
+    font-weight: bold;
+}
+.links a
+{
+    padding: 1vw;
+}
+.github
+{
+    color:#7C007C;
+}
+.hackerrank
+{
+    color:lawngreen;
+}
+.codechef
+{
+    color: #BFAC8A;
+}
+.hackerearth
+{
+    color: #5b6499;
+}
+.instagram
+{
+    color: #D9189E;
+}
