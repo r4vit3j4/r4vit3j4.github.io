@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+*
+{
+    box-sizing: border-box;
+}
+.white
+{
+    color:white;
+}
+.blue
+{
+    color:rgb(59,120,255);
+}
+.red
+{
+    color:red;
+}
+.center
+{
+    text-align: center;
+}
+.purple
+{
+    color:#777bb3
+}
+.yellow
+{
+    color:#f29111;
+}
+.orange
+{
+    color:#e56f04;
+}
+.lightblue
+{
+    color:#0070ba;
+}
+.magenta
+{
+    color:#b83b5e;
+}
+.python-yellow
+{
+    color:#ffda49;
+}
+.hackerrank-green
+{
+    color:lawngreen;
+}
+.instagram-pink
+{
+    color:#D9189E;
+}
+.github-purple
+{
+    color:#8f038f;
+}
+body
+{
+    background-color: #8c8c8c;
+    font-family:  'JetBrains Mono', monospace;
+    font-weight: normal;
+    font-style: normal; 
+}
+.main
+{
+    background-color: #202124;
+    border-radius: 0.7rem;
+    margin: 1em auto;
+}
+.main-div
+{
+    min-width: fit-content;
+    min-height: 100vh;
+}
+.title-div
+{
+    background-color: #F10909;
+    border-radius: 0.7rem 0.7rem 0rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+}
+.title-h1
+{
+    font-size: 1.2rem;
+}
+.content-div
+{
+    padding: 1em 1em 1em 1em;
+}
+.neofetch-div
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.neofetch-image
+{
+    width: 120px;
+    max-width: 120px;
+    border-radius: 0.8em;
+}
+.neofetch-h2
+{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.neofetch-content-div
+{
+    margin-left: 1.5em;
+}
+.neofetch-content-div p
+{
+    margin: 0px;
+    padding: 0px;
+}
+.ls-skills-projects-followme-ul
+{
+    transform: translate(-2.5em);
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+.ls-skills-projects-followme-ul li
+{
+    margin-right: 1.1rem;
+}
